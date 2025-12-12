@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Fonts Overview</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <script src="cursor-glow.js"></script>
+    <img src="images/Header.png" alt="Header" class="header-image">
+    <div class="container">
+        <div>
+            <nav aria-label="Primary navigation">
+                <ul class="vertical-buttons fixed-bottom" role="menubar">
+                    <li><a href="index.html" class="nav-item">Home</a></li>
+                    <li><a href="week1.html" class="nav-item" >Week 1</a></li>
+                    <li><a href="week2.html" class="nav-item">Week 2</a></li>
+                    <li><a href="week3.html" class="nav-item" aria-current="page">Week 3</a></li>
+                    <li><a href="week4.html" class="nav-item">Week 4</a></li>
+                    <li><a href="week5.html" class="nav-item">Week 5</a></li>
+                    <li><a href="week6.html" class="nav-item">Week 6</a></li>
+                    <li><a href="week7.html" class="nav-item">Week 7</a></li>
+                    <li><a href="week8.html" class="nav-item">Week 8</a></li>
+                    <li><a href="week9.html" class="nav-item">Week 9</a></li>
+                    <li><a href="week10.html" class="nav-item">Week 10</a></li>
+                    <li><a href="week11.html" class="nav-item">Week 11</a></li>
+                    <li><a href="week12.html" class="nav-item">Week 12</a></li>
+                </ul>
+            </nav>
+        </div>
+        <page>
+            <h1>Week 3</h1>
+            <h2>Figma</h2>
+            <p>
+                Eerste les in Figma.
+            </p>
+            <p>
+                Het was zeer verwarrend maar ik heb mijn best gedaan, ik wist niet dat we hier ook een logboek voor moesten bijhouden dus is dit spijtig genoeg nog niet gebeurt.
+            </p>
+            <!-- Flex container with 2 columns -->
+            <div class="two-columns">
+                <div class="column">
+                    <p>
+                        Eerst les in figma, zeer verwarrend en chaotisch, zeker wel een stap vooruit.
+                    </p>
+                </div>
+                <div class="column">
+                    <p>
+                        Nog niet helemaal zeker of we nog veel in figma gaan werken maar we kennen ondertussen de basis al.
+                    </p>
+                </div>
+               
+            </div>
+             <div class="Witruimte"></div>
+              <div class="Witruimte"></div>
+             <div>
+                <p>We hebben Figma schermen moeten maken, dit zijn mijn eerste MidFidelity prototypes: </p>
+             </div>
+             <div class="Witruimte"></div>
+            <div class="image-row-figma3" >
+                <img src="images/StationScherm1_figma.jpeg" alt="index screenshot"  class="clickable-img"/>
+                <img  width="31.65%" src="images/PerronScherm1_figma.jpeg" alt="Scherm 2 screenshot" class="clickable-img"/>
+                <img  src="images/WagonScherm1_Figma.jpeg" alt="Scherm 3 screenshot"  class="clickable-img"/>
+            </div>
+            <div id="lightbox" class="lightbox">
+            <span class="close-btn">&times;</span>
+            <img class="lightbox-img" src="images/StationScherm1_figma.jpeg" alt="Grote afbeelding">
+            </div>
+             <div id="lightbox" class="lightbox">
+            <span class="close-btn">&times;</span>
+            <img class="lightbox-img" src="images/PerronScherm1_figma.jpeg" alt="Grote afbeelding">
+            </div>
+             <div id="lightbox" class="lightbox">
+            <span class="close-btn">&times;</span>
+            <img class="lightbox-img" src="images/WagonScherm1_Figma.jpeg" alt="Grote afbeelding">
+            </div>
+            <div class="Witruimte"></div>
+              <div class="Witruimte"></div>
+        </page>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.clickable-img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-img');
+    const closeBtn = document.querySelector('.close-btn');
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+        lightboxImg.src = '';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+        if(e.target === lightbox) {
+            lightbox.style.display = 'none';
+            lightboxImg.src = '';
+        }
+    });
+});
+</script>
+
+</body>
+</html>

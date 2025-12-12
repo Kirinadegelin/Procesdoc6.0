@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Fonts Overview</title>
+
+  <!-- Tailwind output (1x) -->
+  <link href="./dist/output.css" rel="stylesheet">
+
+  <!-- overige custom styles (zorg dat deze geen @tailwind directives bevatten) -->
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+</head>
+<body>
+    <div id="cursorGlow" class="cursor-glow"></div>
+    
+    <img src="images/Header.png" alt="Header" class="header-image">
+    
+    <div class="container">
+        <div>
+            <!-- Fixed bottom navigation example: add `fixed-bottom` to enable -->
+            <nav aria-label="Primary navigation">
+                <ul class="vertical-buttons fixed-bottom" role="menubar">
+                     <li><a href="index.html" class="nav-item" aria-current="page">Home</a></li>
+                    <li><a href="week1.html" class="nav-item" >Week 1</a></li>
+                    <li><a href="week2.html" class="nav-item">Week 2</a></li>
+                    <li><a href="week3.html" class="nav-item">Week 3</a></li>
+                    <li><a href="week4.html" class="nav-item">Week 4</a></li>
+                    <li><a href="week5.html" class="nav-item">Week 5</a></li>
+                    <li><a href="week6.html" class="nav-item">Week 6</a></li>
+                    <li><a href="week7.html" class="nav-item">Week 7</a></li>
+                    <li><a href="week8.html" class="nav-item">Week 8</a></li>
+                    <li><a href="week9.html" class="nav-item">Week 9</a></li>
+                    <li><a href="week10.html" class="nav-item">Week 10</a></li>
+                    <li><a href="week11.html" class="nav-item">Week 11</a></li>
+                    <li><a href="week12.html" class="nav-item">Week 12</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <h1>Informatie</h1>
+            <h2>opdracht</h2>
+            <p>We hebben een opdracht gekregen om treinschermen in HTML en CSS te maken.</p>
+
+            <!-- Flex container with 2 columns -->
+            <div class="two-columns">
+                <div class="column">
+                    <p>Momenteel zitten we aan Week 12 en we zitten in de eindspurt.</p>
+                </div>
+                
+               </div>  <div class="Witruimte"></div>  <div class="download-section">
+    <p>Download hier de gecomprimeerde PDF van de ontwerpdocumentatie:</p>
+    <p> </p>
+    <a href="Figma schermen/2526_PRTT_DegelinK_Figma schermen.zip" download class="download-button">
+        📄 Download Ontwerpdocumentatie
+    </a>
+</div>
+
+        </main>
+    
+  <!-- Externe JS: pijltjes / scroll logic -->
+  
+  <script src="cursor-glow.js" defer></script>
+</body>
+</html>

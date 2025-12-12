@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <!-- Tailwind output (1x) -->
+  <link href="./dist/output.css" rel="stylesheet">
+
+  <!-- overige custom styles (zorg dat deze geen @tailwind directives bevatten) -->
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <meta name="author" content="Degelin Kirina [student]" />
+    <style type="text/css">
+      html { font-family:Calibri, Arial, 'lilita one' , sans-serif; font-size:11pt; }
+      a.comment-indicator:hover + div.comment {position:absolute; display:block; border:1px solid white; padding:0.5em }
+      a.comment-indicator {display:inline-block; border:1px solid white; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted white }
+      .gridlines th { border:1px dotted white }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:12pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:12pt; background-color:white }
+      td.style1 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:14pt;  }
+      th.style1 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:14pt;  }
+      td.style2 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:14pt;  }
+      th.style2 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; font-weight:bold; color:#000000; font-family:'Aptos Narrow'; font-size:14pt;  }
+      td.style3 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style3 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;}
+      td.style4 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style4 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Aptos Narrow'; font-size:12pt; }
+      td.style5 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style5 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style6 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style6 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style7 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style7 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style8 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style8 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style9 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style9 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt; }
+      td.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style11 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style11 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style12 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style12 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style13 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style13 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt; }
+      td.style14 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style14 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:1px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style15 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style15 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style16 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style16 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style17 { vertical-align:middle; text-align:center; border-bottom:3px double #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style17 { vertical-align:middle; text-align:center; border-bottom:3px double #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style18 { vertical-align:middle; text-align:center; border-bottom:3px double #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style18 { vertical-align:middle; text-align:center; border-bottom:3px double #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style19 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style19 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style20 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style20 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style21 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:3px double #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style21 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:3px double #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style22 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:3px double #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style22 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:3px double #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style23 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:3px double #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style23 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:3px double #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style24 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:3px double #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style24 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:3px double #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style25 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style25 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style26 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style26 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style27 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style27 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style28 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style28 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style29 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style29 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:3px double #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style30 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style30 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style31 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style31 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style32 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style32 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      td.style33 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      th.style33 { vertical-align:middle; text-align:center; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:1px solid #000000 !important; color:#000000; font-family:'Aptos Narrow'; font-size:12pt;  }
+      table.sheet0 col.col0 { width:120.64444306pt }
+      table.sheet0 col.col1 { width:161.98888703pt }
+      table.sheet0 col.col2 { width:161.98888703pt }
+      table.sheet0 col.col3 { width:176.89999797pt }
+      table.sheet0 col.col4 { width:260.26666368pt }
+      table.sheet0 col.col5 { width:56.25555491pt }
+      table.sheet0 tr { height:16.363636363636pt }
+      table.sheet0 tr.row0 { height:20pt }
+      table.sheet0 tr.row1 { height:34pt }
+      table.sheet0 tr.row2 { height:51pt }
+      table.sheet0 tr.row3 { height:34pt }
+      table.sheet0 tr.row4 { height:34pt }
+      table.sheet0 tr.row5 { height:52pt }
+      table.sheet0 tr.row6 { height:34pt }
+      table.sheet0 tr.row7 { height:34pt }
+      table.sheet0 tr.row8 { height:17pt }
+      table.sheet0 tr.row9 { height:18pt }
+      table.sheet0 tr.row10 { height:18pt }
+      table.sheet0 tr.row11 { height:17pt }
+      table.sheet0 tr.row12 { height:17pt }
+      table.sheet0 tr.row13 { height:69pt }
+      table.sheet0 tr.row14 { height:52pt }
+      table.sheet0 tr.row15 { height:34pt }
+      table.sheet0 tr.row16 { height:52pt }
+      table.sheet0 tr.row17 { height:35pt }
+      table.sheet0 tr.row18 { height:17pt }
+      table.sheet0 tr.row19 { height:69pt }
+      table.sheet0 tr.row20 { height:52pt }
+      table.sheet0 tr.row21 { height:69pt }
+      table.sheet0 tr.row22 { height:102pt }
+      table.sheet0 tr.row23 { height:69pt }
+      table.sheet0 tr.row24 { height:34pt }
+      table.sheet0 tr.row25 { height:51pt }
+      table.sheet0 tr.row26 { height:18pt }
+      table.sheet0 tr.row27 { height:18pt }
+      table.sheet0 tr.row28 { height:17pt }
+      table.sheet0 tr.row29 { height:17pt }
+      table.sheet0 tr.row30 { height:34pt }
+    </style>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/flexboxes.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/typography.css">
+  </head>
+  <style>
+ 
+
+  /* Override spreadsheet-generated styles: force text and table borders to match site color */
+  table.sheet0, table.sheet0 th, table.sheet0 td {
+    color: #fff5f7 !important;
+    border-color: #fff5f7 !important;
+  }
+
+  /* Handle specific generated classes that include explicit black borders/colors */
+  td[class*="style"], th[class*="style"] {
+    color: #fff5f7 !important;
+    border-color: #fff5f7 !important;
+  }
+
+  /* Gridlines and comment indicator overrides */
+  .gridlines td, .gridlines th { border-color: #fff5f7 !important; }
+  a.comment-indicator:hover + div.comment { border-color: #fff5f7 !important; }
+
+  /* Ensure hr and other thin rules match */
+  hr, .sheet0 td[style], .sheet0 th[style] { border-color: #fff5f7 !important; }
+  </style>
+
+  <body>
+     <div id="cursorGlow" class="cursor-glow"></div>
+    
+    <img src="images/Header.png" alt="Header" class="header-image">
+    
+    <div class="container">
+        
+    <div>
+       <nav aria-label="Primary navigation">
+                <ul class="vertical-buttons fixed-bottom" role="menubar">
+                     <li><a href="index.html" class="nav-item" >Home</a></li>
+                    <li><a href="week1.html" class="nav-item" aria-current="page" >Week 1</a></li>
+                    <li><a href="week2.html" class="nav-item">Week 2</a></li>
+                    <li><a href="week3.html" class="nav-item">Week 3</a></li>
+                    <li><a href="week4.html" class="nav-item">Week 4</a></li>
+                    <li><a href="week5.html" class="nav-item">Week 5</a></li>
+                    <li><a href="week6.html" class="nav-item">Week 6</a></li>
+                    <li><a href="week7.html" class="nav-item">Week 7</a></li>
+                    <li><a href="week8.html" class="nav-item">Week 8</a></li>
+                    <li><a href="week9.html" class="nav-item">Week 9</a></li>
+                    <li><a href="week10.html" class="nav-item">Week 10</a></li>
+                    <li><a href="week11.html" class="nav-item">Week 11</a></li>
+                    <li><a href="week12.html" class="nav-item">Week 12</a></li>
+                </ul>
+            </nav>
+  </div>
+    
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <col class="col4">
+        <col class="col5">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style1 s">Datum</td>
+            <td class="column1 style2 s">activiteit</td>
+            <td class="column2 style2 s">versie</td>
+            <td class="column3 style2 s">problemen/opdracht</td>
+            <td class="column4 style1 s">oplossing</td>
+            <td class="column5 style3 null style3" rowspan="31"></td>
+          </tr>
+          <tr class="row1">
+            <td class="column0 style5 n style11" rowspan="5">9/19/2025</td>
+            <td class="column1 style6 s style12" rowspan="5">schetsen, scherm 1, variatie 1</td>
+            <td class="column2 style6 s style12" rowspan="5">versie 1.0</td>
+            <td class="column3 style7 s">alles op papier krijgen</td>
+            <td class="column4 style8 s">heb alles omgezet naar cm en door 7 gedeeld voor 7 gelijken vakken</td>
+          </tr>
+          <tr class="row2">
+            <td class="column3 style9 s">meerdere talen</td>
+            <td class="column4 style10 s">alles vertaald naar het engels zodat andere mensen dit ook kunnen lezen (dit zou met een machanisme moeten werken zoals schermen op de luchthaven)</td>
+          </tr>
+          <tr class="row3">
+            <td class="column3 style9 s">vertraging/geannuleerd/op tijd?</td>
+            <td class="column4 style10 s">ik heb met kleuren gewerkt zodat het makkelijk te zien is welke treinen vertraging hebben of geschrapt werden</td>
+          </tr>
+          <tr class="row4">
+            <td class="column3 style9 s">perron?</td>
+            <td class="column4 style10 s">ik heb ook met kleuren gewerkt voor de perronnen omdat er soms spoorwisseling is, dit moet ook makkelijk zichtbaar zijn</td>
+          </tr>
+          <tr class="row5">
+            <td class="column3 style13 s">IC nummer?</td>
+            <td class="column4 style14 s">dit heb ik zoals bij de nmbs gedaan, dit heb ik mee op het bord verteld, dit is minder belangerijk (voor mij) dus heb ik dit niet in kleur gezet</td>
+          </tr>
+          <tr class="row6">
+            <td class="column0 style15 n style17" rowspan="4">9/20/2025</td>
+            <td class="column1 style16 s style18" rowspan="4">Schetsen, scherm 1, variatie 2</td>
+            <td class="column2 style16 s style18" rowspan="4">versie 1.0</td>
+            <td class="column3 style7 s">Meerdere talen</td>
+            <td class="column4 style8 s">frans en engels, de meeste dingen zoals 'destination' zijn hetzelfde geschreven en het spaart dus geld en plaats uit</td>
+          </tr>
+          <tr class="row7">
+            <td class="column3 style9 s">vertraging/geannuleerd/op tijd?</td>
+            <td class="column4 style10 s">ik heb opnieuw met kleuren gewerkt, groen deze keer niet, als er vertragin is komt er een pijl met de nieuwe tijd</td>
+          </tr>
+          <tr class="row8">
+            <td class="column3 style9 s">perron?</td>
+            <td class="column4 style10 s">hetzelfde systeem als de vertragingen of annulaties</td>
+          </tr>
+          <tr class="row9">
+            <td class="column3 style19 s">IC nummer?</td>
+            <td class="column4 style20 s">staat in het midden, minder belangrijk als tijden en perron</td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style21 n style17" rowspan="4">9/20/2025</td>
+            <td class="column1 style22 s style18" rowspan="4">schetsen, scherm 1, variatie 3</td>
+            <td class="column2 style22 s style18" rowspan="4">versie 1.0</td>
+            <td class="column3 style23 s">meerdere talen</td>
+            <td class="column4 style24 s">hetzelfde systeem als variatie 2</td>
+          </tr>
+          <tr class="row11">
+            <td class="column3 style9 s">vertraging/geannuleerd/op tijd?</td>
+            <td class="column4 style10 s">kleurensysteem van variatie 2</td>
+          </tr>
+          <tr class="row12">
+            <td class="column3 style9 s">perron?</td>
+            <td class="column4 style10 s">kleuren systeem en achteraan, is makkelijker in mijn mening</td>
+          </tr>
+          <tr class="row13">
+            <td class="column3 style19 s">verdeling</td>
+            <td class="column4 style20 s">heb de verdeling anders gebprobeerd, ik weet meestal hoe laat mijn trein is, niet waar hij naar toe gaat als eindbestemming, dus kijk ik meestal naar perron en tijd, 2 uiterste</td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style21 n style17" rowspan="3">9/20/2025</td>
+            <td class="column1 style22 s style18" rowspan="3">schetsen, scherm 2, variatie 1</td>
+            <td class="column2 style22 s style18" rowspan="3">versie 1.0</td>
+            <td class="column3 style23 s">bestemmingen</td>
+            <td class="column4 style24 s">als de stad/steden in meerdere talen moet staan dan komt er zo een mechanisme zoals op het vliegveld waar de schermen/letters kunnen draaien</td>
+          </tr>
+          <tr class="row15">
+            <td class="column3 style9 s">vertraging/geannuleerd/op tijd?</td>
+            <td class="column4 style10 s">kleuren, rood-&gt; geannuleerd, oranje-&gt; vertraging, geen kleur-&gt; alles oke</td>
+          </tr>
+          <tr class="row16">
+            <td class="column3 style19 s">verdeling</td>
+            <td class="column4 style20 s">eerst tijd, meestal belangerijk, eindbestemming (eerstvolgende in het vet), ook belangerijk de rest is minder belangerijk en komt later</td>
+          </tr>
+          <tr class="row17">
+            <td class="column0 style21 n style11" rowspan="3">9/20/2025</td>
+            <td class="column1 style22 s style12" rowspan="3">schetsen, scherm 2, variatie 2</td>
+            <td class="column2 style22 s style12" rowspan="3">versie 1.0</td>
+            <td class="column3 style23 s">bestemming</td>
+            <td class="column4 style24 s">opnieuw als het in een andere taal moet dan draaien de woorden/letters elke 30 seconden</td>
+          </tr>
+          <tr class="row18">
+            <td class="column3 style9 s">vertraging/geannuleerd/op tijd?</td>
+            <td class="column4 style10 s">kleuren systeem blijft werken ook in deze schermen</td>
+          </tr>
+          <tr class="row19">
+            <td class="column3 style25 s">verdeling </td>
+            <td class="column4 style26 s">eerst de eindbestemming, aangezien de eerst volgende altijd bovenaanstaat, deze staat ook vet. De tijd is ook belangerijk dus ipv heel het bord door te zoeken dus deze staan aan de andere kant vor het bord</td>
+          </tr>
+          <tr class="row20">
+            <td class="column0 style27 n">9/21/2025</td>
+            <td class="column1 style28 s">schetsen, scherm 2, variatie 3</td>
+            <td class="column2 style28 s">versie 1.0</td>
+            <td class="column3 style28 s">bestemmingen</td>
+            <td class="column4 style29 s">op de zelfde manier ingericht als de anderen, alleen kan je nu de QR code scannen zodat je op de app komt waar je de aankomsten, en de tussenhaltes kan bekijken</td>
+          </tr>
+          <tr class="row21">
+            <td class="column0 style21 n style11" rowspan="3">9/21/2025</td>
+            <td class="column1 style22 s style12" rowspan="3">schetsen, scherm 3, variatie 1</td>
+            <td class="column2 style22 s style12" rowspan="3">versie 1.0</td>
+            <td class="column3 style23 s">bestemmingen</td>
+            <td class="column4 style24 s">aankomsten en bestemmingen heb ik achter elkaar gezet, dit neemt het bovenste deel van het scherm in zodat je kan zien wat de volgende stop is, hoe laat hij zou moeten aankomen en de werkelijke aankomst</td>
+          </tr>
+          <tr class="row22">
+            <td class="column3 style9 s">1ste, 2de klasse</td>
+            <td class="column4 style10 s">ik heb het onderste deel van het scherm in 2 gesplits zodat de bovenste helft hiervan de treinsamenstelling is, hierbij kan je zien welke wagon 1ste of 2de klasse is, je kan ook altijd zien waar je je op dat moment bevind in de trein zodat het makelijker is om te weten waar je bent, hierop kan je ook zien waar je met je fiets kan zitten of met de rolstoel</td>
+          </tr>
+          <tr class="row23">
+            <td class="column3 style25 s">real time updates</td>
+            <td class="column4 style26 s">het onderste deel van het scherm is een 3D weg, dit houdt in dat je kan zien waar de trein is op een map, je kan er ook zien op welk perron je zult aankomen, zo kan je dus ook zien of het nog ver is of niet.</td>
+          </tr>
+          <tr class="row24">
+            <td class="column0 style15 n style17" rowspan="3">9/22/2025</td>
+            <td class="column1 style16 s style18" rowspan="3">schetsen, scherm 3, variatie 2</td>
+            <td class="column2 style16 s style18" rowspan="3">versie 1.0</td>
+            <td class="column3 style30 s">bestemmingen</td>
+            <td class="column4 style31 s">hetzelfde systeem als de vorige schets, je kan nu ook het perron hier zien</td>
+          </tr>
+          <tr class="row25">
+            <td class="column3 style9 s">1ste, 2de klasse</td>
+            <td class="column4 style10 s">je kan hier een QR code voor scannen, hier kan je ook op zien waar je bent, en als je je locatie hebt aanstaan kan die je ook zeggen waar je naar toe moet gaan</td>
+          </tr>
+          <tr class="row26">
+            <td class="column3 style19 s">real time updates</td>
+            <td class="column4 style20 s">hetzelfde systeel als de vorige schets</td>
+          </tr>
+          <tr class="row27">
+            <td class="column0 style21 n style32" rowspan="4">9/22/2025</td>
+            <td class="column1 style22 s style33" rowspan="4">schetsen, scherm 3, variatie 3</td>
+            <td class="column2 style22 s style33" rowspan="4">versie 1.0</td>
+            <td class="column3 style23 s">bestemmingen</td>
+            <td class="column4 style24 s">hetzelfde systeem als de vorige schets</td>
+          </tr>
+          <tr class="row28">
+            <td class="column3 style9 s">1ste, 2de klasse</td>
+            <td class="column4 style10 s">hetzelfde systeem als de vorige schets</td>
+          </tr>
+          <tr class="row29">
+            <td class="column3 style9 s">real time updates</td>
+            <td class="column4 style10 s">hetzelfde systeem als de vorige schets</td>
+          </tr>
+          <tr class="row30">
+            <td class="column3 style7 s">meldingen</td>
+            <td class="column4 style8 s">als er een storing is bij een ander perron of een spoorwisseling komt dit op het onderste deel van het scherm</td>
+          </tr>
+        </tbody>
+    </table>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <script src="cursor-glow.js"></script>
+
+  </body>
+</html>
