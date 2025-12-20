@@ -13,6 +13,17 @@
     padding: 0;
     overflow-y: scroll;   /* altijd verticale scrollbar */
     overflow-x: hidden;   /* voorkom horizontale scroll */
+    padding-bottom: 80px;
+}
+.bold {
+    font-weight: bold;
+    color: #4d87df;
+}
+.custom-list{
+    color: #fff5f7;
+    text-decoration: none;
+    margin-left: 50px;
+    display: list-item;
 }
 
 
